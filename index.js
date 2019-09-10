@@ -8,10 +8,8 @@ const initialState = { update1: "React", update2: "Redux" };
 const rootReducer = (state, action) => {
   switch (action.type) {
     case 'UPDATE1':
-      console.log("1");
       return { ...state, update1: action.value };
     case 'UPDATE2':
-      console.log("2");
       return { ...state, update2: action.value };
     default:
       return state;
